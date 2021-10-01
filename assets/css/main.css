@@ -2446,6 +2446,7 @@ input, select, textarea {
 	table {
 		margin: 0 0 2.25em 0;
 		width: 100%;
+		border: 3px #39c29d;
 	}
 
 		table tbody tr {
@@ -2503,7 +2504,7 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			}
-
+*/
 /* Button */
 
 	input[type="submit"],
