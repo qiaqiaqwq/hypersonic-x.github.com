@@ -3,43 +3,123 @@
     <head>
         <title>self introduction</title>
     </head>
-    <body>
+    <!--使用了CSS所以无法显示背景图-->
+    <!--背景音乐好违和就没有加了hhh-->
+    <body background="images/avatar.jpg">
+        <!--navigation bar-->
         <section>
-            <div>
+            <style>
+            
+                *{
+                    margin:0px;
+                    padding: 0px;
+                }
+    
+                .nav{
+                    width: 500px;
+                    height: 46px;
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    z-index: 900;
+                    border: 2px;
+                    border-left-color: black;
+                }
+                .nav-title{
+                    width: 200px;
+                    max-height: 46px;
+                    text-align: center;
+                    line-height: 46px;
+                    float:left;
+                    background-color: #0bf373;
+                    font-size: 20px;
+                    overflow: hidden;
+                    transition: 0.5s;
+                }
+                .nav-title:hover{
+                    background-color:#8fdd13;
+                    cursor: pointer;
+                    max-height: 500px;                
+                }
+                .nav-title ul{
+                    list-style:none;
+                }
+                .nav-title li{
+                    background-color:rgb(27, 206, 212);
+                }
+                .nav-title li:hover{
+                    cursor: pointer;
+                    background-color:rgb(9, 235, 235);
+                }
+                .content{
+                    width: 500px;
+                    height: 500px;
+                    margin-top: 46px;
+                    position: absolute;
+                    background-color: cornflowerblue;
+                }
+                ul,li {
+                    border:2px solid rgb(3, 3, 3);;
+                }
+            </style>
+            <div class = "nav">
+                <div class = "nav-title">
+                    <ul>
+                        <li>@</li>
+                        <li><a href="#Introduction">Introduction</a></li>
+                        <li><a href="#Intresets">Intresets</a></li>
+                        <li><a href="#Class Table">Class Table</a></li>
+                        <li><a href="index.html#Home">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--head-->
+        <section id="one">
+            <div class="container">
                 <h3>Hi,welcome to my page</h3>
                 <link rel="stylesheet" href="assets/css/main.css">
             </div>
         </section>
-        <section>
-            <div>
-                <p>hi guys,good to see u in my personal web page<br/>
+
+        <!--Introduction-->
+        <section id="two">
+            <div class="container">
+                <a name = "Top"></a>
+                <hr>
+                <p>Hey guys,good to see u in my personal web page<br/>  
                 my name is Yunxuan Xue,I am now major in <font color = "#00BFFF"><i>Computer Science and Tecnolegy</i></font> in <em>WuHan University</em><br/>
-                honestly speaking I think it is so fucking hard for me to learn this<br/>
-                but fortunately my teacher is pretty well so that I can get a better understanding about that <br />
+                honestly speaking I think it is a little bit hard for me to learn this<br/>
+                but fortunately my teacher and classmates are pretty well so that I can get a better understanding about that <br />
                 </p>
             </div>
         </section>
+
         <!--habit-->
-        <section>
+        <section id="three">
             <!--cat-->
-            <div>
-                I love animal,<br/>
+            <div class="container">
+                <h2>I love animal</h2>
+                <hr>
                 <pre>
                     <i>
-                        <font size = 6>
+                        <font size = 6 face = "lacinia">
     animal is the friend of us,<br/>
         cat is my favorite:
                         </font>       
                     </i>
                     <h1>this is my cat</h1>
-                    <img src="images/pic02.jpg" alt="apple" width="600" height="200">
+                    <img src="images/pic02.jpg" alt="apple" width="600" height="200" align = "center" border = "3">
                     <h1>and this is too</h1>
-                    <img src="images/pic04.jpg" alt="pickupcat" width="250" height="200">
-
+                    <img src="images/pic04.jpg" alt="pickupcat" width="250" height="200" usemap="Pickup">
+                    <map name="Pickup">
+                        <area shape="circle" coords="50,50,30" href="Pickup.html" alt="Pickup">
+                    </map>
                 </pre>
             </div>
 
-            <div>
+            <div class="container">
                 <ul>
                     <li>Classic Music
                       <ol type="1" start = "0">
@@ -66,14 +146,27 @@
                     </em>
                     <br/>   
                 </h2>
-                <img src="images/mark.jpg" alt="error" width="200" height="200">
+                click Image to Get more about this band!
+                <br/>
+                <a href="https://music.163.com/#/artist?id=38862">
+                    <img src="images/mark.jpg" alt="error" width="200" height="200">
+                </a>
+               
+                <br/>
+                <!--这里用css设置id统一控制更好-->
+                <a name = "Intresets" href="#Top"> 
+                    <font size = 3 color = "#ff9933"><i>Back to top>></i></font> 
+                </a>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>and this is may class table</h2>
-                <style>
 
+        <!--Class table-->
+        <section id="three">
+            <div class="container">
+                <br/>
+                <h2>and this is may class table</h2>
+                <hr>
+                <style>
                     table,table tr th, table tr td {
              
                      border:2px solid #ccc;
@@ -110,8 +203,85 @@
                     <!--13-->
                     <tr><td></td><td> </td><td> </td><td> </td><td>  </td><td colspan="5" height = "50"> </td></tr>
                 </table>
-                
-                   </div>
+            
+                <a name = "Class Table" href="#Top">
+                    <font size = 3 color = "#ff9933"><i>Back to top>></i></font>
+                </a>
+        </div>
+
+        <!--Contact-->
+        </section>
+
+        <!--Contact-->
+        <section>
+            <div class ="container">
+                <h2>Contact</h2>
+                <hr>
+                <a href="mailto:3298520845@qq.com">Contact To me by Email</a>
+            </div>
+        </section>
+
+        <!--download-->
+        <section>
+            <div class ="container">
+                <h2>Download</h2>
+                <hr>
+                <a href="self_introduction.html">Get This page</a>
+                <br/>
+                <a href="readme.txt">Get readme.txt</a>
+            </div>
+        </section>
+
+        <!--Relative-->
+        <section>
+            <div class ="container">
+                <h2>Relative page</h2>
+                <hr>
+                <a href="http://www.baidu.com">Baidu</a>
+                <br/>
+                <a href="http://www.google.com">Google</a>
+                <br/>
+                <a href="http://www.whu.edu.cn">whu</a>
+            </div>
+        </section>
+
+        <!--submit-->
+        <section>
+            <div class = "container">
+                <h2>Tell me somthing about you</h2>
+                <hr>
+                <form action="127.0.0.1" name = "submit" method="POST">
+                    name: <input type="text" id="username" value="uername" name="username" size="20" maxlength="20">
+                    password: <input type="password" id="passwd" name="passwd" size="10" maxlength="10">
+                    confirm: <input type="password" id="confirm" name="confirm" size="10",maxlength = "10" readonly="readonly" disabled="disabled">
+                    you sex:
+                        <input type="radio" name="sex" id="sex" value="male" checked/>male
+                        <input type="radio" name="sex" id="sex" value="female"/>female
+                    <br>
+                    you course: 
+                        <input type="checkbox" name="course" id="course" value="Mathematical Analysis" checked>Mathematical Analysis
+                        <input type="checkbox" name="course" id="course" value="Computer software technology base">Computer software technology base
+                    <br>
+                    choose your pic：
+                        <input type="file" name="sf" id="sf" accept="image/*">
+                        <button name="sb" type="submit" value="pic">submit your pic</button>
+                    <br>
+                    <label for="ta">Write sth.</label>
+                    <textarea name="ta" id="ta" cols="30" rows="10"></textarea>
+                    
+                    <label >Birthday
+                        <select name="se" id="se">
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+            
         </section>
         
     </body>
